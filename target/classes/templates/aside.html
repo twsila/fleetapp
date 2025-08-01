@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<aside th:fragment="sidebar" class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+<!-- ************************************************************************************************************************ -->		
+<!-- ************************************************************************************************************************ -->
+<!-- ************************************************************************************************************************ -->	  
+      <!--begin::Sidebar-->
+      <!--aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"-->
+        <!--begin::Sidebar Brand-->
+        <div class="sidebar-brand">
+          <!--begin::Brand Link-->
+          <a th:href="@{/}" class="brand-link">
+            <!--begin::Brand Image-->
+            <img
+              src="./assets/img/AdminLTELogo.png"
+              alt="AdminLTE Logo"
+              class="brand-image opacity-75 shadow"
+            />
+            <!--end::Brand Image-->
+            <!--begin::Brand Text-->
+            <span class="brand-text fw-light">AdminLTE 4</span>
+            <!--end::Brand Text-->
+          </a>
+          <!--end::Brand Link-->
+        </div>
+        <!--end::Sidebar Brand-->
+        <!--begin::Sidebar Wrapper--> Start
+        <div class="sidebar-wrapper">
+          <nav class="mt-2">
+            <!--begin::Sidebar Menu-->
+            <ul
+              class="nav sidebar-menu flex-column"
+              data-lte-toggle="treeview"
+              role="navigation"
+              aria-label="Main navigation"
+              data-accordion="false"
+              id="navigation">
+              <li class="nav-item"><!-- -->
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon bi bi-speedometer"></i>
+                  <p>
+                    Vehicles
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a th:href="@{/vehicles}" class="nav-link active">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Vehicle Data</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a th:href="@{/vehiclemaintenance}" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Mainteance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a th:href="@{/vehiclemovements}" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Movements</p>
+                    </a>
+                  </li>
+				  <li class="nav-item">
+				    <a th:href="@{/vehiclehires}" class="nav-link">
+				      <i class="nav-icon bi bi-circle"></i>
+				      <p>Hires</p>
+				    </a>
+				  </li>				  
+                </ul>
+              </li>
+			  <li class="nav-item">
+			    <a href="#" class="nav-link active">
+			      <i class="nav-icon bi bi-speedometer"></i>
+			      <p>
+			        Parameters
+			        <i class="nav-arrow bi bi-chevron-right"></i>
+			      </p>
+			    </a>
+			    <ul class="nav nav-treeview">
+			      <li class="nav-item">
+			        <a th:href="@{/vehiclemakes}" class="nav-link active">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Vehicle Makes</p>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a th:href="@{/vehiclemodels}" class="nav-link">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Vehicle Models</p>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a th:href="@{/vehicletypes}" class="nav-link">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Vehicle Types</p>
+			        </a>
+			      </li>
+				  <li class="nav-item">
+				    <a th:href="@{/vehiclestatus}" class="nav-link">
+				      <i class="nav-icon bi bi-circle"></i>
+				      <p>Status Values</p>
+				    </a>
+				  </li>				  
+			    </ul>
+			  </li>
+			  <li class="nav-item">
+			    <a href="#" class="nav-link active">
+			      <i class="nav-icon bi bi-speedometer"></i>
+			      <p>
+			        People
+			        <i class="nav-arrow bi bi-chevron-right"></i>
+			      </p>
+			    </a>
+			    <ul class="nav nav-treeview">
+			      <li class="nav-item">
+			        <a th:href="@{/employees}" class="nav-link active">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Employee</p>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a th:href="@{/clients}" class="nav-link">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Clients</p>
+			        </a>
+			      </li>
+			      <li class="nav-item">
+			        <a th:href="@{/suppliers}" class="nav-link">
+			          <i class="nav-icon bi bi-circle"></i>
+			          <p>Suppliers</p>
+			        </a>
+			      </li>
+			    <li class="nav-item">
+			      <a th:href="@{/contacts}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Contacts</p>
+			      </a>
+			    </li>				  
+				<li class="nav-item">
+				  <a th:href="@{/users}" class="nav-link">
+				    <i class="nav-icon bi bi-circle"></i>
+				    <p>Users</p>
+				  </a>
+				</li>				
+			    </ul>
+			  </li>
+<!-- **************************************************************************************************************** -->
+			<li class="nav-item">
+			  <a href="#" class="nav-link active">
+			    <i class="nav-icon bi bi-speedometer"></i>
+			    <p>
+			      HR Settings
+			      <i class="nav-arrow bi bi-chevron-right"></i>
+			    </p>
+			  </a>
+			  <ul class="nav nav-treeview">
+			    <li class="nav-item">
+			      <a th:href="@{/jobtitles}" class="nav-link active">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Job Titles</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/employeetypes}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Employee Type</p>
+			      </a>
+			    </li>
+			  </ul>
+			</li>			  
+<!-- **************************************************************************************************************** -->
+			<li class="nav-item">
+			  <a href="#" class="nav-link active">
+			    <i class="nav-icon bi bi-speedometer"></i>
+			    <p>
+			      Accounts
+			      <i class="nav-arrow bi bi-chevron-right"></i>
+			    </p>
+			  </a>
+			  <ul class="nav nav-treeview">
+			    <li class="nav-item">
+			      <a th:href="@{/invoices}" class="nav-link active">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Invoices</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/invoicestatus}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Invoice Status Values</p>
+			      </a>
+			    </li>
+			  </ul>
+			</li>			  
+<!-- **************************************************************************************************************** -->
+			<li class="nav-item">
+			  <a href="#" class="nav-link active">
+			    <i class="nav-icon bi bi-speedometer"></i>
+			    <p>
+			      Globals
+			      <i class="nav-arrow bi bi-chevron-right"></i>
+			    </p>
+			  </a>
+			  <ul class="nav nav-treeview">
+			    <li class="nav-item">
+			      <a th:href="@{/countries}" class="nav-link active">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Countries</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/states}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>States</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/locations}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Locations</p>
+			      </a>
+			    </li>	  
+			  </ul>
+			</li>
+<!-- **************************************************************************************************************** -->
+			<li class="nav-item">
+			  <a href="#" class="nav-link active">
+			    <i class="nav-icon bi bi-speedometer"></i>
+			    <p>
+			      Reports
+			      <i class="nav-arrow bi bi-chevron-right"></i>
+			    </p>
+			  </a>
+			  <ul class="nav nav-treeview">
+			    <li class="nav-item">
+			      <a th:href="@{/}" class="nav-link active">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Vehicle Reports</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Employee Reports</p>
+			      </a>
+			    </li>
+			    <li class="nav-item">
+			      <a th:href="@{/}" class="nav-link">
+			        <i class="nav-icon bi bi-circle"></i>
+			        <p>Accounts Reports</p>
+			      </a>
+			    </li>
+			  </ul>
+			</li>
+<!-- **************************************************************************************************************** -->
+            </ul>
+            <!--end::Sidebar Menu-->
+          </nav>
+        </div>
+        <!--end::Sidebar Wrapper-->
+      </aside>
+<!-- ************************************************************************************************************************ -->		
+<!-- ************************************************************************************************************************ -->
+<!-- ************************************************************************************************************************ -->		
+</body>
+</html>
